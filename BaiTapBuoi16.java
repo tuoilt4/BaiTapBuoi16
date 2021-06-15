@@ -22,13 +22,11 @@ public class BaiTapBuoi16 {
         chuoi = chuoi.toLowerCase();
         chuoi = chuoi.replace(chuoi.valueOf(chuoi.charAt(0)), chuoi.valueOf(chuoi.charAt(0)).toUpperCase());
         String temp[] = chuoi.split(" ");
-        chuoi = "";
+//        chuoi = "";
         for (int i = 0; i < temp.length; i++) {
             if (String.valueOf(temp[i]).equals(".")) {
                 chuoi += String.valueOf(temp[i].charAt(0)).toUpperCase() + temp[i].substring(1);
             }
-            if(i<temp.length-1) // nếu tempt[i] không phải từ cuối cùng
-                chuoi+=" ";
         }
         System.out.println("Chuỗi đã chuẩn hóa: ");
         System.out.println(chuoi);
@@ -62,4 +60,3 @@ public class BaiTapBuoi16 {
         }
     }
 }
-
